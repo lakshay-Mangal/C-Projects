@@ -40,8 +40,5 @@ void main()
             printf("%d is greatest of all",c);
         }
         
-    }
-
-    
-    
+    } 
 }

@@ -34,7 +34,7 @@ void main()
             printf("Invalid Voter ID");
         }
     }
-    else if(a=='s')
+    else if(a=='m')
     {       int month;
         printf("Enter the month");
         scanf("%d",&month);
@@ -99,7 +99,7 @@ void main()
     {
     char a;
     printf("Enter a character\n");
-    scanf("%c",&a);
+    scanf(" %c",&a);
 
     if(a=='q' || a=='w' || a=='e'|| a=='r' ||a=='t' || a=='y' || a=='u'|| a=='i'|| a=='o'|| a=='p'  )
     {
@@ -122,7 +122,7 @@ void main()
  else if(a=='c')
  {      char x;
     printf("Enter a character again \n");
-    scanf("%c",&x);
+    scanf(" %c",&x);
     if(x=='a'||x=='e' ||x=='i'||x=='o' ||x=='u')
     {
         printf("This is small case vowel");
@@ -136,5 +136,37 @@ void main()
     {
         printf("Given character is consonent");
     }
+ }
+    else if(a=='s')
+    {  
+        char a;
+        printf("Enter a character");
+        scanf(" %c",&a);
+        if(a=='w')
+        {   int a,b;
+            printf("\n Enter 2 numbers");
+            scanf(" %d%d",&a,&b);
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            printf("New A is %d \n New b is %d",a,b);
+        }
+        else if(a=='o')
+        {   int a,b,c;
+            printf("Enter 2 numbers");
+            scanf(" %d%d",&a,&b);
+            c=a;
+            a=b;
+            b=c;
+            printf("New A is %d \n New B is %d",a,b);
+        }
+        else
+        {
+            printf("Input is invalid");
+        }
+    }
+ else
+ {
+    printf("Given Character input is invalid");
  }
 }

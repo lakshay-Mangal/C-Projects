@@ -10,13 +10,18 @@ int i,j,n;
 printf("Enter a number");
 scanf("%d",&n);
 
-for(i=0;i<n;i++)
+for(i=1;i<=n;i++)
 {
-    for (j)
+    for (j=1;j<=n;j++)
     {
-        /* code */
+        if((i+j)<=n)
+        printf(" ");
+         else
+        {
+            printf("8");
+        }
     }
-    
+   printf("\n"); 
 }
 }
 

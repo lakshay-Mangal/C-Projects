@@ -1,0 +1,53 @@
+#include<Stdio.h>
+
+void main()
+{
+    float a,b,c,d,e;
+    printf("Enter marks of 5 subjects \n");
+    scanf("%f%f%f%f%f",&a,&b,&c,&d,&e);
+
+
+    if(a >100 || b>100 ||c>100 || d>100|| e>100)
+    {
+        printf("Maximum marks allowed are only 100 \n");
+    }
+
+    else
+    {
+        printf("The student details are as follows : \n----------------------- \n");
+
+        float per=0;
+        per = ((a+b+c+d+e)/500)*100;
+        printf("The percentage is %0.2f\n",per);
+
+        if(per<40)
+        {
+            printf("\n \n This student has received F grade");
+        }
+        else if (per>=40 && per<60)
+        {
+            printf("This student has received E  grade");
+        }
+        else if (per>=60 && per<70)
+        {
+            printf("This Student has received D grade");
+        }
+        else if (per>=70 && per<80)
+        {
+            printf("This Student has received C grade");
+        }
+        else if (per >=80)
+        {
+            printf("This Student has received B grade");
+        }
+         else if (per >=90)
+        {
+            printf("This Student has received A grade");
+        }
+        else
+        {
+            printf("Something wrong in student details");
+        }
+    }
+}
+
